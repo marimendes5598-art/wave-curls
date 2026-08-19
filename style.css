@@ -17,11 +17,27 @@ header{
     border: none;
     cursor: pointer;
     color:#f8ecf5;
+    
 
     position: absolute;
     left: 20px;
     top: 20px;
+    
+    
+    
 }
+
+#menu {
+    text-align: left;
+    
+    
+}
+
+#item:hover{
+    transition: linear;
+    color: rgb(224, 43, 191); 
+}
+
 
 nav {
     display: none;
@@ -44,4 +60,14 @@ nav a {
     padding: 10px;
 
 }
+
+.container {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(250, 123, 222);
+    position: left;
+  }
+  
+
+
 
