@@ -1,36 +1,86 @@
-body{
-    margin:0;
-    font-family:American Typewriter, serif;
-    background:#f4f4f4;
-    text-align:center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-    background:#f58dde;
-    color:white;
-    padding:1px;
+body {
+    margin: 0;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9dce6;
+
 }
 
-.menu-btn {
-    font-size: 20px;
-    background: none;
+.barra {
+    color: #711d1d;
+}
+
+.inicio {
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    
+
+    
+
+    background: linear-gradient(
+        135deg,
+        #f9dce6,
+        #f5cbd9
+    );
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 50px;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.slogan {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #555;
+    margin-bottom: 45px;
+}
+
+.descricao {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+button {
     border: none;
-    cursor: pointer;
-    color:#f8ecf5;
-    
+    background-color: #d85b87;
+    color: white;
 
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    
-    
-    
+    padding: 14px 35px;
+    border-radius: 10px;
+
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c94c78;
 }
 
 #menu {
     text-align: left;
     
     
+}
+.menu-btn {
+    background-color: f5cbd9;
 }
 
 #item:hover{
@@ -42,7 +92,7 @@ header{
 nav {
     display: none;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #f9f6f6;
     padding: 10px;
     position: absolute;
     left: 0px;
@@ -61,12 +111,7 @@ nav a {
 
 }
 
-.container {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(250, 123, 222);
-    position: left;
-  }
+
   
 
 
