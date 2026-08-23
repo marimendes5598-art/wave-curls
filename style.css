@@ -14,9 +14,7 @@ body {
 
 }
 
-.barra {
-    color: #711d1d;
-}
+
 
 .inicio {
     text-align: center;
@@ -25,6 +23,7 @@ body {
 
     display: flex;
     flex-direction: column;
+    padding-top: 80px;
     
 
     
@@ -60,28 +59,51 @@ h1 {
 
 button {
     border: none;
-    background-color: #d85b87;
     color: white;
 
-    padding: 14px 35px;
+    padding: 20px 2px;
     border-radius: 10px;
 
     font-size: 17px;
     cursor: pointer;
-}
+    display: flex;
+    
 
-button:hover {
-    background-color: #c94c78;
+    
 }
 
 #menu {
     text-align: left;
+    background-color: #f1e6e9;
     
     
 }
 .menu-btn {
-    background-color: f5cbd9;
+    background-color: #f5cbd9;
+    padding: 20px 35px;
 }
+
+
+.comecar {
+    background-color: #d6547f;
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    width: 600px;
+
+
+}
+
+.comecar:hover {
+    background-color: #c94c78;
+}
+
+
+
+
+
 
 #item:hover{
     transition: linear;
