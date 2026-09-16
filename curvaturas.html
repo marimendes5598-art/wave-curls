@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAVE&curlS - Tipo de cabelo</title>
+
+<link rel="stylesheet" href="curvaturas.css">
+
+
+</head>
+
+<body>
+
+<main class="container">
+
+<div class="logo">
+WAVE<span>&</span>curlS
+</div>
+
+<p class="subtitulo">LOVE YOUR TEXTURE</p>
+
+<section class="conteudo">
+
+<h1>Qual é o seu<br>tipo de cabelo?</h1>
+
+<p class="descricao">
+Selecione uma opção para encontrarmos<br>
+os melhores produtos para você.
+</p>
+
+<div class="tipos">
+
+<button class="tipo" onclick="selecionarTipo('2A')">2A</button>
+<button class="tipo" onclick="selecionarTipo('2B')">2B</button>
+<button class="tipo" onclick="selecionarTipo('2C')">2C</button>
+
+<button class="tipo" onclick="selecionarTipo('3A')">3A</button>
+<button class="tipo" onclick="selecionarTipo('3B')">3B</button>
+<button class="tipo" onclick="selecionarTipo('3C')">3C</button>
+
+<button class="tipo" onclick="selecionarTipo('4A')">4A</button>
+<button class="tipo" onclick="selecionarTipo('4B')">4B</button>
+<button class="tipo" onclick="selecionarTipo('4C')">4C</button>
+
+</div>
+
+<button class="continuar" onclick="continuar()">
+Continuar
+</button>
+
+</section>
+
+</main>
+
+<script>
+let tipoSelecionado = null;
+
+function selecionarTipo(tipo) {
+
+tipoSelecionado = tipo;
+
+document.querySelectorAll(".tipo").forEach(botao => {
+botao.classList.remove("selecionado");
+});
+
+event.target.classList.add("selecionado");
+}
+
+function continuar() {
+
+if (!tipoSelecionado) {
+alert("Selecione seu tipo de cabelo.");
+return;
+}
+
+// Salva o tipo escolhido para usar nas próximas telas
+localStorage.setItem("tipoCabelo", tipoSelecionado);
+
+// Próxima tela do MVP
+window.location.href = "produtos.html";
+}
+</script>
+
+</body>
+</html>
