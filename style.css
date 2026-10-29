@@ -35,15 +35,24 @@ body {
     );
 }
 
-h1 {
-    font-family: Georgia, serif;
-    font-size: 50px;
-    color: #111;
-    margin-bottom: 5px;
-}
+.logo {
+    
+        font-family: Georgia, serif;
+        font-size: 50px;
+        font-weight: bold;
+        
+        color: #292929;
+        
+        letter-spacing: -2px;
+        }
+        
+        .logo span {
+        color: #e5487d;
+        }
+
 
 .slogan {
-    font-size: 13px;
+    font-size: e3px;
     letter-spacing: 3px;
     color: #555;
     margin-bottom: 45px;
@@ -71,6 +80,10 @@ button {
 
     
 }
+
+a {
+    text-decoration: none;
+  }
 
 #menu {
     text-align: left;
