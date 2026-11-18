@@ -1,0 +1,214 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff7fa, #ffe5ee);
+    min-height: 100vh;
+    color: #333;
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 35px 20px 15px;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    color: #292929;
+}
+
+.logo span {
+    color: #e5487d;
+}
+
+.subtitulo {
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #b85a78;
+    margin-top: 5px;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 35px auto 60px;
+    text-align: center;
+}
+
+.identificacao {
+    display: inline-block;
+    background: #f9cbd9;
+    color: #a8325c;
+    padding: 9px 22px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    margin: 22px 0 15px;
+    color: #333;
+}
+
+.descricao {
+    color: #8a5b6b;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.secao-produtos {
+    margin-top: 55px;
+}
+
+.secao-produtos h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.texto-secao {
+    color: #8a5b6b;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.produto {
+    background: white;
+    padding: 25px;
+    border: 1px solid #f5c6d5;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(180, 80, 115, 0.07);
+    transition: 0.2s;
+}
+
+.produto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(180, 80, 115, 0.12);
+}
+
+.produto h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #a8325c;
+    margin-bottom: 12px;
+}
+
+.produto p {
+    font-size: 14px;
+    color: #72545e;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.categoria {
+    display: inline-block;
+    background: #fff0f5;
+    color: #bd4770;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 18px;
+    color: #c23f6c;
+    font-weight: bold;
+}
+
+.aviso {
+    font-size: 12px;
+    color: #987784;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.botao {
+    padding: 16px 30px;
+    border: none;
+    border-radius: 13px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.voltar {
+    background: white;
+    color: #c23f6c;
+    border: 2px solid #ed91ad;
+}
+
+.continuar {
+    background: #e5487d;
+    color: white;
+    box-shadow: 0 5px 12px rgba(229, 72, 125, 0.20);
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+
+    .logo {
+        font-size: 32px;
+    }
+
+    .container {
+        margin-top: 25px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .descricao {
+        font-size: 14px;
+    }
+
+    .secao-produtos h2 {
+        font-size: 24px;
+    }
+
+    .lista-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .botao {
+        width: 100%;
+    }
+}

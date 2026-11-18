@@ -222,4 +222,26 @@
     margin-top: 28px;
     }
     }
+
+    
+    .voltar {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    
+        padding: 12px 25px;
+        background: white;
+        color: #c23f6c;
+        border: 2px solid #ed91ad;
+        border-radius: 12px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    .voltar:hover {
+        background: #ffe3ec;
+        transform: translateY(-2px);
+    }
     

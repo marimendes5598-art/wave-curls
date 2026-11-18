@@ -14,6 +14,10 @@
 
 <main class="container">
 
+<button class="voltar" onclick="window.location.href='index.html'">
+    ←
+</button>
+
 <div class="logo">
 WAVE<span>&</span>curlS
 </div>
@@ -78,7 +82,7 @@ return;
 localStorage.setItem("tipoCabelo", tipoSelecionado);
 
 // Próxima tela do MVP
-window.location.href = "produtos.html";
+window.location.href = tipoSelecionado + ".html";
 }
 </script>
 
